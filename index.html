@@ -6,6 +6,11 @@
     <title>LP-test</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gorditas&family=Indie+Flower&family=Noto+Serif+JP:wght@900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -13,32 +18,29 @@
             <img src="img/estra_logo.png" alt="ロゴ">
         </a>
         <nav>
-            <ul class="nav_list">
-                <li><a href="#News" class="nav_item">News</a></li>
-                <li><a href="#About" class="nav_item">About</a></li>
-                <li><a href="#Service" class="nav_item">Service</a></li>
-                <li><a href="#Blog" class="nav_item">Blog</a></li>
-                <li><a href="#Company" class="nav_item">Company</a></li>
-                <li><a href="#Contact" class="nav_item">Contact</a></li>
+            <ul class="nav__list">
+                <li><a href="#News" class="nav__item">News</a></li>
+                <li><a href="#About" class="nav__item">About</a></li>
+                <li><a href="#Service" class="nav__item">Service</a></li>
+                <li><a href="#Blog" class="nav__item">Blog</a></li>
+                <li><a href="#Company" class="nav__item">Company</a></li>
+                <li><a href="#Contact" class="nav__item">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="mv_wrap">
-            <div class="mv_text-area">
-                <p class="mv_large">Commit to the <span>growth</span><br>for everyone</p>
-                <p class="mv_text">
+        <div class="mv__wrapper">
+            <div class="mv__text-area">
+                <p class="mv__large">Commit to the <span>growth</span><br>for everyone</p>
+                <p class="mv__text">
                 <span class="mv__medium">全ての人の<span class="mv__medium--color">成長</span>にコミットする</span><br>
                 Educational Technology Company<br>
                 estra inc since 2019
                 </p>
             </div>
-            <div class="mv__img">
-                <img src="img/firstview.jpg" alt="子供_in_Wonderland">
-            </div>
         </div>
-        <section class="news__wrapper" id="News">
-            <h2 class="section__title">新着情報</h2>
+        <section class="news__wrapper wrapper" id="News">
+            <h2 class="section__title section__title--news">新着情報</h2>
             <ul class="news__list">
                 <li class="news__row">
                     <p class="news__date">2021/01/01<span>ニュース</span></p>
@@ -62,25 +64,20 @@
                 </li>
             </ul>
         </section>
-        <section class="about__wrapper" id="About">
-            <h2 class="section__title--center">Technology × Coaching </h2>
+        <section class="about__wrapper wrapper" id="About">
+            <h2 class="section__title--about">Technology × Coaching </h2>
             <div class="about__content">
                 <p class="about__text">
-                株式会社estraはデジタル化が遅れている教育業界に<br>
-                最新のテクノロジーを導入することによって教育の<br>
-                DXを実現します。<br>
-                <br>
-                独自のオペレーションとコーチングを融合した新しい<br>
-                教育の仕組みにより、一人ひとりに合わせた最適な教<br>
-                育を提供します。
+                株式会社estraはデジタル化が遅れている教育業界に最新のテクノロジーを導入することによって教育のDXを実現します。<br><br>
+                独自のオペレーションとコーチングを融合した新しい教育の仕組みにより、一人ひとりに合わせた最適な教育を提供します。
                 </p>
                 <div class="about__img">
                     <img src="img/about.jpg" alt="love is ...">
                 </div>
             </div>
         </section>
-        <section class="service__wrapper" id="Service">
-            <h2 class="setion__title">サービス内容</h2>
+        <section class="service__wrapper wrapper" id="Service">
+            <h2 class="section__title section__title--service">サービス内容</h2>
             <div class="service__content">
                 <div class="service__content--left">
                     <div class="service__img--left">
@@ -95,67 +92,70 @@
                     <div class="service__img--right">
                         <img src="img/service__first.svg" alt="会議中">
                     </div>
-                    <p class="service__title">教育事業</p>
-                    <p class="service__text">
-                        サンプルテキストがここには入ります。サンプルテキストがここには入ります。サンプルテキストがここには入ります。
-                    </p>
+                    <div class="service__content--right">
+                        <p class="service__title">教育事業</p>
+                        <p class="service__text">
+                            サンプルテキストがここには入ります。サンプルテキストがここには入ります。サンプルテキストがここには入ります。
+                        </p>
+                    </div>
                 </div>
                 <div class="service__content--right-bottom">
                     <div class="service__img--right">
                         <img src="img/service__first.svg" alt="会議中">
                     </div>
-                    <p class="service__title">教育事業</p>
-                    <p class="service__text">
-                        サンプルテキストがここには入ります。サンプルテキストがここには入ります。サンプルテキストがここには入ります。
-                    </p>
+                    <div class="service__content--right">
+                        <p class="service__title">教育事業</p>
+                        <p class="service__text">
+                            サンプルテキストがここには入ります。サンプルテキストがここには入ります。サンプルテキストがここには入ります。
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="blog__wrapper" id="Blog">
-            <h2 class="setion__title">ブログ</h2>
-            <div class="blog__card">
-                <div class="card__img">
-                    <img src="img/blog__first.jpg" alt="この向きだとちょっと座りにくそうですね。">
-                    <p class="card__text--top">Blog</p>
-                    <div class="card__content">
-                        <h3 class="card__title">プログラミング学習の勉強方法を特集。挫折しない秘訣とは？</h3>
-                        <div class="card__text--bottom">
-                            <p class="card__date">2021/01/01</p>
-                            <p class="card__tag">COACHTECH</p>
+        <section class="blog__wrapper wrapper" id="Blog">
+            <h2 class="section__title section__title--blog">ブログ</h2>
+            <div class="card__container">
+                <div class="blog__card">
+                    <div class="card__img">
+                        <img src="img/blog__first.jpg" alt="この向きだとちょっと座りにくそうですね。">
+                        <div class="card__content">
+                            <h3 class="card__title">プログラミング学習の勉強方法を特集。挫折しない秘訣とは？</h3>
+                            <div class="card__text--bottom">
+                                <p class="card__date">2021/01/01</p>
+                                <p class="card__tag">#COACHTECH</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="blog__card">
-                <div class="card__img">
-                    <img src="img/blog__first.jpg" alt="この向きだとちょっと座りにくそうですね。">
-                    <p class="card__text--top">Blog</p>
-                    <div class="card__content">
-                        <h3 class="card__title">プログラミング学習の勉強方法を特集。挫折しない秘訣とは？</h3>
-                        <div class="card__text--bottom">
-                            <p class="card__date">2021/01/01</p>
-                            <p class="card__tag">COACHTECH</p>
+                <div class="blog__card">
+                    <div class="card__img">
+                        <img src="img/blog__first.jpg" alt="この向きだとちょっと座りにくそうですね。">
+                        <div class="card__content">
+                            <h3 class="card__title">プログラミング学習の勉強方法を特集。挫折しない秘訣とは？</h3>
+                            <div class="card__text--bottom">
+                                <p class="card__date">2021/01/01</p>
+                                <p class="card__tag">#COACHTECH</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="blog__card">
-                <div class="card__img">
-                    <img src="img/blog__first.jpg" alt="この向きだとちょっと座りにくそうですね。">
-                    <p class="card__text--top">Blog</p>
-                    <div class="card__content">
-                        <h3 class="card__title">プログラミング学習の勉強方法を特集。挫折しない秘訣とは？</h3>
-                        <div class="card__text--bottom">
-                            <p class="card__date">2021/01/01</p>
-                            <p class="card__tag">COACHTECH</p>
+                <div class="blog__card">
+                    <div class="card__img">
+                        <img src="img/blog__first.jpg" alt="この向きだとちょっと座りにくそうですね。">
+                        <div class="card__content">
+                            <h3 class="card__title">プログラミング学習の勉強方法を特集。挫折しない秘訣とは？</h3>
+                            <div class="card__text--bottom">
+                                <p class="card__date">2021/01/01</p>
+                                <p class="card__tag">#COACHTECH</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <p class="blog__button">一覧ページへ</p>
         </section>
-        <section class="company__wrapper" id="Company">
-            <h2 class="setion__title">会社概要</h2>
+        <section class="company__wrapper wrapper" id="Company">
+            <h2 class="section__title section__title--company">会社概要</h2>
             <table class="company__details-table">
                 <tr class="company__details-row">
                     <th class="company__details-label">会社名</th>
@@ -191,7 +191,7 @@
                 </a>
             </div>
             <div class="interview__box">
-                <a href="">
+                <a href="" class="interview__link">
                     <img src="img/interview.png" alt="ホワイトな職場です">
                     <p class="box__title">社員インタビュー</p>
                 </a>
@@ -204,7 +204,7 @@
     </main>
     <footer class="footer">
         <small class="copy-right">
-        Copyright&copy;estra,inc All Rights Reserved.
+        Copyright &copy; estra,inc All Rights Reserved.
         </small>
     </footer>
 </body>
