@@ -50,6 +50,7 @@ cursive; */
     display: block;
     margin-bottom: 40px;
 }
+
 .mv__text-area{
     display: block;
     position: absolute;
@@ -430,8 +431,4 @@ cursive; */
     padding: 1.5em;
     background-color: #f5f5f5;
     text-align: center;
-}
-
-.copy-right{
-
 }
